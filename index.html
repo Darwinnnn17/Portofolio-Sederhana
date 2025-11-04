@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Darwin Silaen — Portfolio</title>
+    <link rel="icon" href="img/2.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Skip link (aksesibilitas) -->
+    <a class="visually-hidden-focusable" href="#main">Lewati ke konten utama</a>
+
+    <!-- ===== Header: judul + navigasi ===== -->
+    <header class="header" role="banner">
+      <a class="logo" href="#home"><span>DARWIN</span>SILAEN</a>
+
+      <!-- tetap pakai #menu-icon agar cocok dengan CSS & JS -->
+      <i class="fas fa-bars" id="menu-icon" role="button" aria-label="Buka menu" aria-expanded="false" tabindex="0"></i>
+
+      <nav class="navbar" aria-label="Navigasi utama">
+        <a href="#home" aria-current="page">Home</a>
+        <a href="#about">About</a>
+        <a href="#skill">Skill</a>
+        <a href="#contact">Contact</a>
+        <a href="#profile">Profile</a>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+      <!-- ===== Hero/Home ===== -->
+      <section class="home" id="home" aria-labelledby="home-title">
+        <div class="home-content">
+          <h3 id="home-title">Hello, I'm</h3>
+          <h1>Darwin Silaen</h1>
+          <h3>Saya seorang <span>Mahasiswa Teknik Komputer</span></h3>
+
+          <ul class="social-media" aria-label="Media sosial">
+            <li>
+              <a href="https://github.com/Darwinnnn17/Darwinnnn17" target="_blank" rel="noopener">
+                <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/darwinsilaennnn_/" target="_blank" rel="noopener">
+                <i class="fab fa-instagram" aria-hidden="true"></i><span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/darwin-silaen-5274a7300/" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i><span class="visually-hidden">LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <figure class="home-img">
+          <img src="img/2.png" alt="Logo personal Darwin Silaen" />
+          <figcaption class="visually-hidden">Logo personal</figcaption>
+        </figure>
+      </section>
+      <!-- End Home -->
+
+      <!-- ===== About ===== -->
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about-content">
+          <h2 class="heading" id="about-title">About <span>Me</span></h2>
+          <p class="description">
+            Saya mahasiswa D3 Teknik Komputer di Institut Teknologi Del yang menguasai HTML, CSS, dan JavaScript.
+          </p>
+        </div>
+      </section>
+      <!-- End About -->
+
+      <!-- ===== Skills ===== -->
+      <section class="skill" id="skill" aria-labelledby="skill-title">
+        <h2 class="heading" id="skill-title"><span>My</span> Skill</h2>
+
+        <div class="skill-container">
+          <article class="skill-box">
+            <i class="fab fa-html5" aria-hidden="true"></i>
+            <h3>HTML</h3>
+            <p>Struktur semantik, aksesibilitas, dan SEO dasar.</p>
+          </article>
+
+          <article class="skill-box">
+            <i class="fab fa-css3-alt" aria-hidden="true"></i>
+            <h3>CSS</h3>
+            <p>Layout responsif (Flexbox/Grid), animasi dasar, dan utilitas modern.</p>
+          </article>
+
+          <article class="skill-box">
+            <i class="fab fa-js" aria-hidden="true"></i>
+            <h3>JavaScript</h3>
+            <p>Interaksi DOM, event handling, dan konsumsi API sederhana.</p>
+          </article>
+
+          <article class="skill-box">
+            <i class="fas fa-microchip" aria-hidden="true"></i>
+            <h3>IoT Dasar</h3>
+            <p>Eksperimen sensor (MAX30102/MLX90614) dan integrasi dashboard demo.</p>
+          </article>
+        </div>
+      </section>
+      <!-- End Skills -->
+
+      <!-- ===== Contact ===== -->
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 class="heading" id="contact-title">Contact <span>Me</span></h2>
+
+        <form action="#" method="post" novalidate>
+          <div class="input-box">
+            <div class="form-field">
+              <label for="name" class="visually-hidden">Nama</label>
+              <input id="name" name="name" type="text" placeholder="Your Name" required />
+            </div>
+            <div class="form-field">
+              <label for="email" class="visually-hidden">Email</label>
+              <input id="email" name="email" type="email" placeholder="Your Email" required />
+            </div>
+          </div>
+
+          <div class="input-box">
+            <div class="form-field">
+              <label for="phone" class="visually-hidden">Nomor HP</label>
+              <input id="phone" name="phone" type="tel" placeholder="Your Mobile Number" />
+            </div>
+            <div class="form-field">
+              <label for="subject" class="visually-hidden">Subjek</label>
+              <input id="subject" name="subject" type="text" placeholder="Your Email Subject" />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="message" class="visually-hidden">Pesan</label>
+            <textarea id="message" name="message" rows="3" placeholder="Your Message" required></textarea>
+          </div>
+
+          <input type="submit" value="Send Message" class="btn" />
+        </form>
+      </section>
+      <!-- End Contact -->
+
+      <!-- ===== Profile ===== -->
+      <section class="profile" id="profile" aria-labelledby="profile-title">
+        <h2 class="heading" id="profile-title"><span>My</span> Profile</h2>
+
+        <aside class="profile-container">
+          <article class="profile-box">
+            <figure>
+              <img src="img/2.png" alt="Avatar Darwin Silaen" />
+              <figcaption class="visually-hidden">Avatar</figcaption>
+            </figure>
+
+            <h3>Data Pribadi</h3>
+            <dl>
+              <div><dt>NAMA</dt><dd>Darwin Teguh Silaen</dd></div>
+              <div><dt>UMUR</dt><dd>20 Tahun</dd></div>
+              <div><dt>NO TELP</dt><dd><a href="tel:+6285269325660">085269325660</a></dd></div>
+              <div><dt>ALAMAT</dt><dd>Siborongborong, Tapanuli Utara, Sumatra Utara</dd></div>
+            </dl>
+          </article>
+        </aside>
+      </section>
+      <!-- End Profile -->
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+      <div class="links" aria-label="Navigasi footer">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skill">Skill</a>
+        <a href="#contact">Contact</a>
+        <a href="#profile">Profile</a>
+      </div>
+      <div class="credit">
+        <p>
+          Created By
+          <a href="https://www.instagram.com/darwinsilaennnn_/" target="_blank" rel="noopener">Darwin Silaen</a>
+          | <time datetime="2025">2025</time>
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
